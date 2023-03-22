@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Template Bootstrap</title>
+  <!-- File Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <!-- CSS tùy chỉnh của bạn ở dưới này -->
+  <style>
+    .row>div:nth-child(1) {
+      background-color: chartreuse;
+      border: 1px solid black;
+    }
+
+    .row>div:nth-child(2) {
+      background-color: palevioletred;
+      border: 1px solid black;
+    }
+
+    .row>div:nth-child(3) {
+      background-color: blue;
+      border: 1px solid black;
+    }
+
+    .row>div:nth-child(4) {
+      background-color: gold;
+      border: 1px solid black;
+    }
+
+    #res>div {
+      background: olive;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <h1>Bootstrap Grid Options</h1>
+  </center>
+
+  <div class="container">
+
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">
+            Extra small &lt 768px
+          </th>
+          <th scope="col">
+            Small &gt= 768px
+          </th>
+          <th scope="col">
+            Medium &gt= 992px
+          </th>
+          <th scope="col">
+            Large &gt= 1200px
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">
+            Class prefix
+          </th>
+          <td>
+            .col-xs-
+          </td>
+          <td>
+            .col-sm-
+          </td>
+          <td>
+            .col-sm-
+          </td>
+          <td>
+            .col-lg-
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">
+            Suitable for
+          </th>
+          <td>
+            Phones
+          </td>
+          <td>
+            Tablets
+          </td>
+          <td>
+            Small Laptops
+          </td>
+          <td>
+            Laptops & Desktops
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">
+            Grid behaviour
+          </th>
+          <td>
+            Horizontal at all times
+          </td>
+          <td>
+            Collapsed to start, horizontal above breakpoints
+          </td>
+          <td>
+            Collapsed to start, horizontal above breakpoints
+          </td>
+          <td>
+            Collapsed to start, horizontal above breakpoints
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">
+            Container width
+          </th>
+          <td>
+            None (auto)
+          </td>
+          <td>
+            750px
+          </td>
+          <td>
+            970px
+          </td>
+          <td>
+            1170px
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">
+            # of columns
+          </th>
+          <td>
+            12
+          </td>
+          <td>
+            12
+          </td>
+          <td>
+            12
+          </td>
+          <td>
+            12
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">
+            Column width
+          </th>
+          <td>
+            Auto
+          </td>
+          <td>
+            ~62px
+          </td>
+          <td>
+            ~81px
+          </td>
+          <td>
+            ~97px
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">
+            Gutter width
+          </th>
+          <td>
+            30px (15px on each side of a column)
+          </td>
+          <td>
+            30px (15px on each side of a column)
+          </td>
+          <td>
+            30px (15px on each side of a column)
+          </td>
+          <td>
+            30px (15px on each side of a column)
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">
+            Nestable
+          </th>
+          <td>
+            Yes
+          </td>
+          <td>
+            Yes
+          </td>
+          <td>
+            Yes
+          </td>
+          <td>
+            Yes
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">
+            Offsets
+          </th>
+          <td>
+            Yes
+          </td>
+          <td>
+            Yes
+          </td>
+          <td>
+            Yes
+          </td>
+          <td>
+            Yes
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">
+            Column ordering
+          </th>
+          <td>
+            Yes
+          </td>
+          <td>
+            Yes
+          </td>
+          <td>
+            Yes
+          </td>
+          <td>
+            Yes
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <center>
+    <h1>Bootstrap Grid System</h1>
+  </center>
+  <div class="container">
+    <!-- Hàng với 2 cột bằng nhau -->
+    <div class="row">
+      <div class="col-md-6">Cột trái</div>
+      <div class="col-md-6">Cột phải</div>
+    </div>
+
+    <!-- Hàng với 2 cột chia tỷ lệ 1:2 -->
+    <div class="row">
+      <div class="col-md-4">Cột trái</div>
+      <div class="col-md-8">Cột phải</div>
+    </div>
+
+    <!-- Hàng với 2 cột chia tỷ lệ 1:3 -->
+    <div class="row">
+      <div class="col-md-3">Cột trái</div>
+      <div class="col-md-9">Cột phải</div>
+    </div>
+
+    <!-- Hàng với 3 cột -->
+    <div class="row">
+      <div class="col-lg-4">Cột trái</div>
+      <div class="col-lg-4">Cột giữa</div>
+      <div class="col-lg-4">Cột phải</div>
+    </div>
+
+    <!-- Hàng với 3 cột chia tỷ lệ 1:4:1 -->
+    <div class="row">
+      <div class="col-lg-2">Cột trái</div>
+      <div class="col-lg-8">Cột giữa</div>
+      <div class="col-lg-2">Cột phải</div>
+    </div>
+
+    <!-- Hàng với 3 cột chia không đều nhau -->
+    <div class="row">
+      <div class="col-lg-3">Cột trái</div>
+      <div class="col-lg-7">Cột giữa</div>
+      <div class="col-lg-2">Cột phải</div>
+    </div>
+
+
+
+    <!-- Hàng với 2 cột bằng nhau -->
+    <div class="row">
+      <div class="col">Cột 1</div>
+      <div class="col">Cột 2</div>
+    </div>
+
+    <!-- Hàng với 3 cột bằng nhau -->
+    <div class="row">
+      <div class="col">Cột 1</div>
+      <div class="col">Cột 2</div>
+      <div class="col">Cột 3</div>
+    </div>
+
+
+
+    <!-- Hàng với 2 cột bằng nhau-->
+    <div class="row">
+      <div class="col">Cột 1</div>
+      <div class="col">Cột 2</div>
+    </div>
+
+    <!--Row with three columns divided in 1:2:1 ratio-->
+    <div class="row">
+      <div class="col">Cột 1</div>
+      <div class="col-sm-6">Cột 2</div>
+      <div class="col">Cột 3</div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col-sm-4 col-md-3">Cột 1</div>
+      <div class="col-sm-8 col-md-6">Cột 2</div>
+      <div class="col-sm-12 col-md-3">Cột 3</div>
+    </div>
+
+
+    <div id="res" class="row">
+      <div class="col-xl-4 col-lg-4 col-md-6 col-xl-3">
+        <p>Hộp 1</p>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-xl-3">
+        <p>Hộp 2</p>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-xl-3">
+        <p>Hộp 3</p>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-xl-3">
+        <p>Hộp 4</p>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-xl-3">
+        <p>Hộp 5</p>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-xl-3">
+        <p>Hộp 6</p>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-xl-3">
+        <p>Hộp 7</p>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-xl-3">
+        <p>Hộp 8</p>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-xl-3">
+        <p>Hộp 9</p>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-xl-3">
+        <p>Hộp 10</p>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-xl-3">
+        <p>Hộp 11</p>
+      </div>
+      <div class="col-xl-4 col-lg-4 col-md-6 col-xl-3">
+        <p>Hộp 12</p>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-sm-8">Cột trái</div>
+      <div class="col-sm-4">
+        <!-- Cột phải với các hàng và cột lồng nhau -->
+        <div class="row">
+          <div class="col-12"></div>
+        </div>
+        <div class="row">
+          <div class="col-6"></div>
+          <div class="col-6"></div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="row justify-content-md-center">
+      <div class="col-md-3">Cột trái</div>
+      <div class="col-md-auto">Cột có chiều rộng biến đổi</div>
+      <div class="col-md-3">Cột phải</div>
+    </div>
+    <div class="row">
+      <div class="col">Cột trái</div>
+      <div class="col-auto">Cột có chiều rộng biến đổi</div>
+      <div class="col">Cột phải</div>
+    </div>
+
+
+    <div class="row align-items-start">
+      <div class="col">Cột 1</div>
+      <div class="col">Cột 2</div>
+      <div class="col">Cột 3</div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col">Cột 1</div>
+      <div class="col">Cột 2</div>
+      <div class="col">Cột 3</div>
+    </div>
+    <div class="row align-items-end">
+      <div class="col">Cột 1</div>
+      <div class="col">Cột 2</div>
+      <div class="col">Cột 3</div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-4 align-self-start">Cột 1</div>
+      <div class="col-4 align-self-center">Cột 2</div>
+      <div class="col-4 align-self-end">Cột 3</div>
+    </div>
+
+
+    <div class="row justify-content-start">
+      <div class="col-4">Cột 1</div>
+      <div class="col-4">Cột 2</div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-4">Cột 1</div>
+      <div class="col-4">Cột 2</div>
+    </div>
+    <div class="row justify-content-end">
+      <div class="col-4">Cột 1</div>
+      <div class="col-4">Cột 2</div>
+    </div>
+
+
+    <div class="row justify-content-around">
+      <div class="col-4">Cột 1</div>
+      <div class="col-4">Cột 2</div>
+
+    </div>
+    <div class="row justify-content-between">
+      <div class="col-2">Cột 1</div>
+      <div class="col-2">Cột 2</div>
+      <div class="col-2">Cột 3</div>
+      <div class="col-2">Cột 4</div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col order-last">Cột đầu nhưng xếp ở cuối</div>
+      <div class="col">Cột thứ 2, nhưng không có thứ tự</div>
+      <div class="col order-first">Cột cuối, nhưng được đặt ở đầu</div>
+    </div>
+
+    <div class="row">
+      <div class="col order-4">Cột 1</div>
+      <div class="col">Cột 2</div>
+      <div class="col order-1">Cột 3</div>
+      <div class="col order-3">Cột 4</div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8 offset-md-4">
+        col-md-8 offset-md-4
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-4">Cột 1</div>
+      <div class="col-md-4 ml-auto">Cột 2</div>
+    </div>
+    <div class="row">
+      <div class="col-auto mr-auto">Cột 1</div>
+      <div class="col-auto">Cột 2</div>
+    </div>
+
+    <div class="row no-gutters">
+      <div class="col-4">Cột 1</div>
+      <div class="col-4">Cột 2</div>
+      <div class="col-4">Cột 3</div>
+    </div>
+
+    <div class="row">
+      <div class="col">Cột 1</div>
+      <div class="col">Cột 2</div>
+      <div class="w-100"></div>
+      <div class="col">Cột 4</div>
+      <div class="col">Cột 5</div>
+    </div>
+
+</body>
+
+</html>

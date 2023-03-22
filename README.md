@@ -18,4 +18,4 @@
 
 ## Link xem trực tiếp trên web:
 
-https://lequocthinh-genesis.github.io/Bootstrap_Grid-HTML-CSS-Bootstrap/
+https://lequocthinh-genesis.github.io/Bootstrap_Grid/
